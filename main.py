@@ -49,7 +49,7 @@ def process_files(uploaded_files):
         error_message = (
             f"Error occurs: {e}\n\n"
             f"Please contact [minnitijulien06@gmail.com](mailto:minnitijulien06@gmail.com) "
-            f"or [Issues on GitHub](https://github.com/your-repo/issues)"
+            f"or [Issues on GitHub](https://github.com/Jumitti/skeletonanalyzer/issues)"
         )
         st.error(error_message)
 
@@ -64,7 +64,7 @@ def convert_df_to_excel(df):
         error_message = (
             f"Error occurs: {e}\n\n"
             f"Please contact [minnitijulien06@gmail.com](mailto:minnitijulien06@gmail.com) "
-            f"or [Issues on GitHub](https://github.com/your-repo/issues)"
+            f"or [Issues on GitHub](https://github.com/Jumitti/skeletonanalyzer/issues)"
         )
         st.error(error_message)
 
@@ -73,6 +73,9 @@ st.set_page_config(page_title="AnalyszeSkeleton", page_icon="🦴", layout="wide
 st.title("AnalyzeSkeleton Fiji")
 
 st.write("This software simply facilitates the processing of data obtained with the AnalyzeSkeleton tool from Fiji/ImageJ")
+st.write("⚠️ This analysis is OUR way of analysing this data, and may not correspond to your needs.")
+with st.expander("**Analyse**", expanded=True):
+    st.write("- Branches, Junctions and End-point Voxels are sums\n\n- Average Branch Length is a mean")
 st.link_button("GitHub", "")
 
 st.divider()
